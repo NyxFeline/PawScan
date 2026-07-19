@@ -98,7 +98,7 @@ def home():
                 result = "Đây là Mèo"
                 result_type = "cat"
             else:
-                result = "Không nhận dạng được đây là Chó hay Mèo"
+                result = "Không xác định được Chó hay Mèo"
                 result_type = "unknown"
 
     return render_template(

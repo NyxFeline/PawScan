@@ -178,28 +178,21 @@
             font-size: 20px; color: var(--ink-soft);
         }
 
-        /* Huy hiệu kết quả kiểu thẻ đeo cổ thú cưng */
+        /* Thẻ kết quả — hình vuông bo góc, đồng bộ với ô "Ảnh của bạn" */
         .tag {
             aspect-ratio: 1 / 1;
-            border-radius: 50%;
+            border-radius: var(--radius-md);
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             text-align: center;
-            padding: 14px;
-            position: relative;
-            border: 3px solid transparent;
+            padding: 18px 20px;
+            border: 1px solid transparent;
             animation: tag-pop 0.35s ease;
         }
-        .tag::before {
-            content: "";
-            position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
-            width: 10px; height: 10px; border-radius: 50%;
-            background: var(--bg);
-            box-shadow: inset 0 0 0 2px rgba(31,42,36,0.15);
-        }
-        .tag-icon { font-size: 34px; line-height: 1; }
+        .tag-icon { font-size: 48px; line-height: 1; }
         .tag-text {
             font-family: 'Baloo 2', sans-serif;
-            font-weight: 700; font-size: 15px; margin-top: 6px;
+            font-weight: 700; font-size: 15px; line-height: 1.35;
+            margin-top: 10px; max-width: 15ch;
         }
 
         .tag.dog { background: var(--dog-soft); border-color: var(--dog); color: #7A4A17; }
@@ -226,7 +219,7 @@
 <body>
 
     <div class="page">
-        <span class="eyebrow">🐾 PawScan · Đồ án cuối kỳ Machine Learning</span>
+        <span class="eyebrow">🐾 PawScan · Đồ án cuối kỳ Ứng dụng AI trong phát triển phần mềm</span>
         <h1>PawScan — Nhận diện Chó / Mèo</h1>
         <p class="subtitle">Tải ảnh lên, mô hình sẽ đối chiếu và cho biết đây là chó, mèo, hay chưa đủ chắc chắn để kết luận.</p>
 

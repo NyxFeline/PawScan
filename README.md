@@ -1,6 +1,6 @@
 # 🐾 PawScan — Nhận Diện Chó / Mèo
 
-Ứng dụng web nhận diện ảnh Chó/Mèo, xây dựng cho đồ án cuối kỳ môn Machine Learning. Người dùng tải ảnh lên, hệ thống trích xuất đặc trưng và trả về kết quả dự đoán (Chó / Mèo / Không xác định) kèm ảnh đối chiếu.
+Ứng dụng web nhận diện ảnh Chó/Mèo, xây dựng cho đồ án cuối kỳ môn Ứng dụng AI trong phát triển phần mềm. Người dùng tải ảnh lên, hệ thống trích xuất đặc trưng và trả về kết quả dự đoán (Chó / Mèo / Không xác định) kèm ảnh đối chiếu.
 
 ## Công nghệ sử dụng
 
@@ -141,8 +141,8 @@ Mở `http://localhost:5000` — nếu chạy được y hệt lúc `python app.
 
 ### Deploy lên Render (để lấy URL nộp bài)
 
-1. Push toàn bộ project lên một GitHub repo.
-2. Vào [render.com](https://render.com) → đăng ký → **New → Web Service** → connect GitHub repo vừa push.
+1. Push toàn bộ project (kèm `Dockerfile`, `.dockerignore`, `requirements.txt`, `app.py`, `templates/`, `pipeline_catdog_model_final.pkl`) lên một GitHub repo.
+2. Vào [render.com](https://render.com) → đăng ký (không cần thẻ tín dụng) → **New → Web Service** → connect GitHub repo vừa push.
 3. Render tự phát hiện `Dockerfile` → chọn Environment = **Docker**.
 4. Chọn Instance Type = **Free** → bấm **Deploy**.
 5. Đợi build xong, Render cấp 1 URL dạng `https://pawscan.onrender.com` (đặt tên service là `pawscan` lúc tạo) — đây là link nộp bài.
