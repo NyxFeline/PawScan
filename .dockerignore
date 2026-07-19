@@ -1,0 +1,7 @@
+.venv/
+Cat_Dog_data/
+*.ipynb
+__pycache__/
+*.pyc
+.git/
+README.md

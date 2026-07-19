@@ -1,0 +1,7 @@
+Flask==2.3.2
+scikit-learn
+scikit-image
+opencv-python-headless==4.8.0.76
+numpy>=1.26.4,<2
+joblib
+gunicorn==21.2.0
