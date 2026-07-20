@@ -1,6 +1,7 @@
 # 🐾 PawScan — Nhận Diện Chó / Mèo
 
 Ứng dụng web nhận diện ảnh Chó/Mèo, xây dựng cho đồ án cuối kỳ môn Ứng dụng AI trong phát triển phần mềm. Người dùng tải ảnh lên, hệ thống trích xuất đặc trưng và trả về kết quả dự đoán (Chó / Mèo / Không xác định) kèm ảnh đối chiếu.
+Link web: [https://pawscan-k1v3.onrender.com](https://pawscan-k1v3.onrender.com)
 
 ## Công nghệ sử dụng
 
@@ -57,7 +58,7 @@ Render lại trang: ảnh gốc + huy hiệu kết quả đặt cạnh nhau
 ├── app.py                                    # Flask server: load model, tiền xử lý, dự đoán
 ├── pipeline_catdog_model_final.pkl           # Pipeline đã huấn luyện (joblib)
 ├── requirements.txt                          # Thư viện Python cần cài
-├── dockerfile                                # Đóng gói app thành container
+├── Dockerfile                                # Đóng gói app thành container
 ├── .dockerignore                             # Loại trừ file không cần thiết khi build image
 ├── .gitignore                                # Loại trừ file không cần thiết khi push GitHub
 ├── templates/
@@ -72,8 +73,6 @@ Render lại trang: ảnh gốc + huy hiệu kết quả đặt cạnh nhau
         └── dog/
 ```
 
-> ⚠️ File Docker của project hiện đặt tên là `dockerfile` (chữ thường). Trên Windows điều này không sao vì hệ điều hành không phân biệt hoa/thường, nhưng khi build trên môi trường Linux (như Render) mặc định chỉ tự nhận diện file tên chính xác là `Dockerfile` (chữ D hoa). Nên đổi tên thành `Dockerfile` trước khi push lên GitHub để tránh lỗi "không tìm thấy Dockerfile" lúc deploy.
->
 > `Cat_Dog_data/` chỉ dùng để train/test trong notebook, không cần thiết cho việc chạy web app hay build Docker image — đã được loại trừ trong `.gitignore` và `.dockerignore`.
 
 ## Cách chạy
