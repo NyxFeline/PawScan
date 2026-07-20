@@ -1,6 +1,7 @@
 # 🐾 PawScan — Nhận Diện Chó / Mèo
 
 Ứng dụng web nhận diện ảnh Chó/Mèo, xây dựng cho đồ án cuối kỳ môn Ứng dụng AI trong phát triển phần mềm. Người dùng tải ảnh lên, hệ thống trích xuất đặc trưng và trả về kết quả dự đoán (Chó / Mèo / Không xác định) kèm ảnh đối chiếu.
+
 Link web: [https://pawscan-k1v3.onrender.com](https://pawscan-k1v3.onrender.com)
 
 ## Công nghệ sử dụng
